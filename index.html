@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankita Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <style>
     body{
@@ -12,11 +15,148 @@
     background: url(img/bg\ \(2\).jpg);
     height: 100vh;
     /* width: 100%; */
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+    }
+
+    .header{
+        color: white;
+        margin top: 210px;
+    }
+    #left{
+        display: inline-block;
+        /* border: 1px solid white; */
+        position: absolute;
+        left: 34px;
+        top: 0px;
+    }
+    #mid{
+        display: block;
+        /* border: 1px solid red; */
+        margin: 18px auto;
+        width: 38%;
+    }
+    #right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 1px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 15px;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        color: gray;
+        text-decoration: underline;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 15px;
+    }
+    #logo{
+        width: 80px;
+        filter: invert(100%);
+    }
+    .btn{
+        margin: 10px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: gray;
+    }
+    #left{
+        line-height: 0px;
+    }
+    #left div{
+        font-size: 15px;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 2px 2px;
+        border-radius: 28px;
+        padding: 75px;
+        width: 33%;
+        left: 0px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+        padding: 8px;
+        border: 2px solid black;
+        font-size: 16px;
+        border-radius: 8px;
+        text-align: center;
+        width: 463px;
+    }
+    .container button{
+         display: block;
+         margin:  8px auto;
+         width: 50%;
+    }
+    .container h1{
+        text-align: center;
+        color: black;
+        border: 1px solid black;
+        background-color: rgb(232, 206, 158);
     }
 </style>
 <body>
+    <header class="header">
+        <div id="left">
+            <img src="/img/Dumbell.png" alt="logo" id="logo">
+            <div><b>Ankita Fitness</b></div>
+        </div>
+        <div id="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active"><b>Home</b></a></li>
+                    <li><a href="#"><b>About Us</a></li>
+                    <li><a href="#"><b>Fitness Calculator</a></li>
+                    <li><a href="#"><b>Contact Us</a></li>
+                </ul>
+        </div>
+        <div id="right">
+            <button class="btn">Call us</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1><b>Join The Best Gym</b></h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your number">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
 </body>
 </html>
